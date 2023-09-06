@@ -121,12 +121,6 @@ src="https://www.facebook.com/tr?id=1353786652147039&ev=PageView&noscript=1"
     <header class="header" style="margin-bottom: 10px;">
     <div class="branding">
         <div class="container-fluid position-relative py-3">
-            <div class="logo-wrapper">
-                <div class="site-logo" style="text-align: center;"><p style="text-transform: uppercase; font-weight: 700; font-size: 28px;">HOJE A CIDADE DE <span id="user-city" style="text-transform: uppercase; color: #f55;"></span> VAI DOMINAR O EXCEL!</p></div>
-            </div><!--//docs-logo-wrapper-->
-
-            
-
         </div><!--//container-->
     </div><!--//branding-->
 </header><!--//header-->
@@ -489,25 +483,6 @@ src="https://www.facebook.com/tr?id=1353786652147039&ev=PageView&noscript=1"
         }
     }, 1000); // Atualiza a cada segundo
 </script>
-    
-    <script>
-    // Função para atualizar a cidade na página
-    function updateCity(city) {
-      const userCityElement = document.getElementById("user-city");
-      userCityElement.textContent = city;
-    }
-
-    // Faz uma requisição para ipinfo.io para obter informações de geolocalização
-    fetch("https://ipinfo.io?token=add1bc3d79679c")
-      .then(response => response.json())
-      .then(data => {
-        updateCity(data.city);
-      })
-      .catch(error => {
-        console.error("Erro ao obter informações de localização:", error);
-        updateCity("Localização desconhecida");
-      });
-  </script>
 </body>
 </html> 
 
